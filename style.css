@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Preahvihear&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(315deg, #7950f2 5%, #748ffc 95%);
+  width: 100vmin;
+  height: 100vh;
+  margin: auto;
+}
+
+h1 {
+  color: black;
+  font-family: "Preahvihear", sans-serif;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.choices {
+  gap: 3rem;
+  margin-top: 12vmin;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices .choice {
+  width: 25vmin;
+  height: 25vmin;
+  font-size: 15vmin;
+  border: none;
+  border-radius: 100px;
+  background: linear-gradient(315deg, #7950f2 5%, #4dabf7 95%);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 20px,
+    rgba(0, 0, 0, 0.12) 0px 4px 20px, rgba(0, 0, 0, 0.17) 0px 12px 17px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.choices .choice:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+}
+
+.results {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 63px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-family: "Preahvihear", sans-serif;
+  /* background: #7655d4; */
+  width: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+  }
+
+  #msg {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    height: 5.5rem;
+    line-height: 2.5rem;
+    margin-top: 40px;
+    text-wrap: wrap;
+  }
+
+  .choices {
+    margin-top: 25vmin;
+    gap: 1rem;
+  }
+
+  .choices .choice {
+    width: 50vmin;
+    height: 35vmin;
+    font-size: 13vmin;
+    margin-bottom: 4vmin;
+  }
+
+  .results {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+
+  #msg {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+}

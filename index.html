@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://pngtree.com/freepng/rock-paper-scissors-cloth-guess-fist-gesture_5459399.html"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <button class="choice" data-selection="rock" id="stone">✊</button>
+      <button class="choice" data-selection="paper" id="paper">✋</button>
+      <button class="choice" data-selection="scissors" id="scissors">
+        ✌️
+      </button>
+    </div>
+    <div class="results">
+      <div class="score">
+        <p id="user-board">0</p>
+        <p>You</p>
+      </div class="score">
+      <div>
+        <p id="computer-board">0</p>
+        <p>Comp</p>
+      </div>
+
+      
+    </div>
+     <div class="msg-container">
+        <p id="msg">Play your move</p>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
